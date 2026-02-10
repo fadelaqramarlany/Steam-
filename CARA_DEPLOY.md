@@ -1,11 +1,11 @@
 # Panduan Hosting Website Gratis & Domain Subdomain
 
-Selamat! Anda sudah memiliki kode untuk website **EduPintar**. Untuk membuat website ini online (dapat diakses siapa saja melalui link), Anda bisa menggunakan layanan gratis berikut:
+Selamat! Anda sudah memiliki kode untuk website **FadelWeb**. Untuk membuat website ini online (dapat diakses siapa saja melalui link), Anda bisa menggunakan layanan gratis berikut:
 
 ## 1. Persiapan: Simpan Kode di GitHub
 Langkah pertama adalah mengunggah kode ini ke GitHub.
 1. Buat akun di [github.com](https://github.com).
-2. Buat repositori baru (misalnya: `my-website`).
+2. Buat repositori baru (misalnya: `FADELWEB.IO`).
 3. Unggah semua file proyek ini ke repositori tersebut.
 
 ---
@@ -27,10 +27,24 @@ Netlify memberikan link seperti `nama-proyek.netlify.app`.
 3. Pilih GitHub dan pilih repositori Anda.
 4. Klik **"Deploy site"**.
 
+### Opsi C: GitHub Pages (Cocok untuk FADELWEB.IO)
+Karena Anda sudah menggunakan GitHub Pages, berikut cara menggunakannya untuk proyek ini:
+1. Pastikan file `vite.config.js` sudah memiliki properti `base`. Contoh: `base: '/FADELWEB.IO/'`.
+2. Instal package gh-pages: `npm install gh-pages --save-dev`.
+3. Tambahkan script ini di `package.json`:
+   ```json
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d dist"
+   ```
+4. Jalankan `npm run deploy`.
+5. Buka tab **Settings** -> **Pages** di repo GitHub Anda dan pilih branch `gh-pages` sebagai sumber.
+
+> **Catatan:** Proyek ini sudah menggunakan `HashRouter` agar navigasi (pindah halaman) tetap berfungsi dengan baik di GitHub Pages tanpa error 404 saat halaman di-refresh.
+
 ---
 
 ## 3. Cara Mendapatkan Domain ".com" Secara Gratis?
-Biasanya domain premium seperti `.com`, `.net`, atau `.id` adalah berbayar. Namun, Anda bisa mendapatkan link gratis selamanya menggunakan subdomain dari layanan di atas (contoh: `websiteku.vercel.app`).
+Biasanya domain premium seperti `.com`, `.net`, atau `.id` adalah berbayar. Namun, Anda bisa mendapatkan link gratis selamanya menggunakan subdomain dari layanan di atas (contoh: `fadelweb.vercel.app`).
 
 Jika Anda benar-benar ingin domain khusus:
 - **GitHub Student Developer Pack:** Jika Anda seorang pelajar, Anda bisa mendapatkan domain `.me` gratis selama 1 tahun melalui [education.github.com](https://education.github.com/pack).

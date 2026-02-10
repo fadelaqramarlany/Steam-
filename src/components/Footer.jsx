@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Github, Twitter, Instagram } from 'lucide-react';
+import { Code, Github, Twitter, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -8,11 +8,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <BookOpen className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold">EduPintar</span>
+              <Code className="h-8 w-8 text-blue-400" />
+              <span className="text-xl font-bold">FadelWeb</span>
             </div>
             <p className="text-gray-400 max-w-sm mb-6">
-              EduPintar adalah platform belajar online terbaik untuk meningkatkan keahlian Anda di bidang teknologi dan desain.
+              FadelWeb adalah solusi profesional untuk kebutuhan website Anda. Kami membantu bisnis Anda go digital dengan desain modern dan performa tinggi.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-blue-600 transition">
@@ -37,14 +37,14 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Hubungi Kami</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>support@edupintar.com</li>
-              <li>+62 812 3456 7890</li>
+              <li>fadel@fadelweb.io</li>
+              <li>+62 8XX XXXX XXXX</li>
               <li>Jakarta, Indonesia</li>
             </ul>
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 EduPintar. Hak Cipta Dilindungi.</p>
+            <p>&copy; 2024 FadelWeb - Fadel Aqram Marpaung. Hak Cipta Dilindungi.</p>
         </div>
       </div>
     </footer>
